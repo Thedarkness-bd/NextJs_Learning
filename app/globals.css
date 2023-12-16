@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+nav {
+  padding: 20px 30px;
+}
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+.link {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 20px;
+  color: mediumseagreen;
+}
+.link:hover{
+    color: dimgray;
+}
+h1 {
+  text-align: center;
+}
