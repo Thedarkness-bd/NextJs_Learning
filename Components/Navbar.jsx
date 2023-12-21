@@ -1,6 +1,8 @@
+"use client";
 const { default: Link } = require("next/link");
-
+import { useRouter } from "next/navigation";
 const Navbar = () => {
+  const router = useRouter();
   return (
     <nav>
       <ul>
@@ -21,6 +23,14 @@ const Navbar = () => {
           <Link className="link" href="/school/student">
             Student Portal
           </Link>
+
+          <button
+            style={{ padding: "8px", borderRadius: "10px" }}
+            className="border-2 bg-red-500 text-white rounded"
+            onClick={() => router.push("/projects")}
+          >
+            Projects
+          </button>
         </div>
       </ul>
     </nav>
